@@ -312,7 +312,7 @@
 
     <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
         <h2 class="font-serif italic text-5xl md:text-7xl leading-relaxed text-primary">Countdown</h2>
-        <p class="mt-6 uppercase tracking-widest text-xs text-gray-700">Until 01 Nov, 2026</p>
+        <p class="mt-6 uppercase tracking-widest text-xs text-gray-700">Until November 01, 2026</p>
         
         <div id="countdown" class="flex justify-center gap-6 md:gap-12 font-serif">
             <div class="flex flex-col items-center">
@@ -360,23 +360,37 @@
 
         
         <!-- CARD : WALIMA -->
-        <div class="bg-surface p-8 lg:p-12 text-center shadow-sm border border-gray-100 flex flex-col h-full w-full mx-auto transition-transform hover:-translate-y-1 duration-300">
-            <!-- Updated icon for Walima -->
-            <i class="ph-light ph-sparkle text-5xl text-primary mb-6 mx-auto"></i>
-            <h3 class="font-serif text-2xl uppercase tracking-widest mb-2">Walima</h3>
-            <p class="text-gray-500 mb-6 font-serif italic">01-Nov,2026 | 7:00 PM</p>
-            <div class="flex-grow">
-                <p class="font-bold text-lg mb-2">Hafizabad Gymkhana</p>
-                <p class="text-gray-500 text-sm leading-relaxed mb-8">
-                    GYM KHANA, Hafizabad. <br>Pakistan
-                </p>
-            </div>
-            <a href="https://maps.app.goo.gl/PtD9qQpfXRv7BtVo8" 
-               target="_blank" 
-               class="inline-block border border-dark px-6 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300 mt-auto">
-                View on Map
-            </a>
+       <div class="flex justify-center w-full">
+    <div class="bg-surface p-8 lg:p-12 text-center shadow-sm border border-gray-100 flex flex-col h-full w-full max-w-lg mx-auto transition-transform hover:-translate-y-1 duration-300">
+        
+        <!-- Updated icon for Walima -->
+        <i class="ph-light ph-sparkle text-5xl text-primary mb-6 mx-auto"></i>
+
+        <h3 class="font-serif text-2xl uppercase tracking-widest mb-2">
+            Walima
+        </h3>
+
+        <p class="text-gray-500 mb-6 font-serif italic">
+            01-Nov,2026 | 7:00 PM
+        </p>
+
+        <div class="flex-grow">
+            <p class="font-bold text-lg mb-2">
+                Hafizabad Gymkhana
+            </p>
+
+            <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                GYM KHANA, Hafizabad. <br>Pakistan
+            </p>
         </div>
+
+        <a href="https://maps.app.goo.gl/PtD9qQpfXRv7BtVo8"
+           target="_blank"
+           class="inline-block border border-dark px-6 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300 mt-auto">
+            View on Map
+        </a>
+    </div>
+</div>
 
     
         
@@ -413,7 +427,7 @@
         <div class="space-y-16">
             
            
-              <!-- Day 3: Waleema -->
+              <!-- Day : Waleema -->
             <div>
                 <div class="text-center mb-8">
                     <h3 class="font-serif text-3xl text-white mb-2">Walima</h3>
@@ -596,7 +610,7 @@
         });
 
         // 2. Countdown Logic
-        const countDownDate = new Date("Oct 30, 2026").getTime();
+        const countDownDate = new Date("Nov 01, 2026").getTime();
         const countdownTimer = setInterval(function() {
             const now = new Date().getTime();
             const distance = countDownDate - now;
